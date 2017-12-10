@@ -1,4 +1,4 @@
-# Inform MGCI
+# InforMGCI
 An awesome companion app for students at Marc Garneau CI to get on the air updates on events, announcements, and clubs. It also lets them see their next class by using a timetable screen.
 
 ## Try it out
@@ -17,5 +17,5 @@ You can run the app using a local web server at [localhost](localhost:8080) afte
 
 ## Screenshots
 
-![Intro](https://raw.githubusercontent.com/ShehryarX/inform-mgci/master/1.png) ![Events](https://raw.githubusercontent.com/ShehryarX/inform-mgci/master/2.png) ![Clubs and announcements](https://raw.githubusercontent.com/ShehryarX/inform-mgci/master/3.png) ![Quote and timetable](https://raw.githubusercontent.com/ShehryarX/inform-mgci/master/4.png) ![Push notifications](https://raw.githubusercontent.com/ShehryarX/inform-mgci/master/5.png)
+![Intro](https://raw.githubusercontent.com/ShehryarX/inform-mgci/master/1.png) ![Events](https://raw.githubusercontent.com/ShehryarX/informgci/master/2.png) ![Clubs and announcements](https://raw.githubusercontent.com/ShehryarX/informgci/master/3.png) ![Quote and timetable](https://raw.githubusercontent.com/ShehryarX/informgci/master/4.png) ![Push notifications](https://raw.githubusercontent.com/ShehryarX/informgci/master/5.png)
 
