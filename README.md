@@ -17,7 +17,13 @@ You can run the app using a local web server at [localhost](localhost:8080) afte
 
 ## Screenshots
 
-![Home Page](https://lh3.googleusercontent.com/NIg9gwbmveJsTbP7BTdHyO2bcIoG-GfBQ0s5EUvF9bQ1YkvtItmwczbjRUjnDNNISeKM=h900-rw) ![Filter Page](https://lh3.googleusercontent.com/s4yCcJXcu6ppRhBQY3gdTxllHCzol7Y-cP1veijMCJ_7VFNHFgPhIGMF1ePmIiDuIg=h900-rw) ![Tab View](https://lh3.googleusercontent.com/QgYMIEMoACdCw1IiEzmzkNERULMHRePZ_goCDfPGTNwXzvpwuOCoxCUiX6QsW4bM7Sqn=h900-rw)
-![Speaker Page](https://lh3.googleusercontent.com/FpManxeOUB0ofUIDVq8DJ2z5uE7NAkgiMOQH9JCdVHa1-gcyIaXtLyW3WO9KbBtCH--f=h900-rw) ![Speaker Detail](https://lh3.googleusercontent.com/gWBauNVUWi0jPcX-AX3xOUllByPVlpE7zFLuEasT--8JXfQ97tOIMU6nDjA_huZHHD0=h900-rw) ![Speaker Contact](https://lh3.googleusercontent.com/vYDclsqRIhh31csQiGxoVzUiXrCzS0LmVRqqh0fEdDTqF1aIUocV8cYPzhURjmMETTg=h900-rw)
-![Contact Page](https://lh3.googleusercontent.com/A1vs-YbCPR37Zm2pQiuhMW1KGyfDpul_TKQrh50T6I26hk-fz-0IIid5Gd0W1_s2T0w=h900-rw)
+![Intro](https://raw.githubusercontent.com/ShehryarX/inform-mgci/master/1.png) 
+
+![Events](https://raw.githubusercontent.com/ShehryarX/inform-mgci/master/2.png) 
+
+![Clubs and announcements](https://raw.githubusercontent.com/ShehryarX/inform-mgci/master/3.png)
+
+![Quote and timetable](https://raw.githubusercontent.com/ShehryarX/inform-mgci/master/4.png) 
+
+![Push notifications](https://raw.githubusercontent.com/ShehryarX/inform-mgci/master/5.png-rw)
 
