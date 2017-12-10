@@ -1,8 +1,8 @@
 # Inform MGCI
 An awesome companion app for students at Marc Garneau CI to get on the air updates on events, announcements, and clubs. It also lets them see their next class by using a timetable screen.
 
-## Try it out (coming soon)
-[Try it out!](https://url)
+## Try it out
+[Try it out!](https://play.google.com/store/apps/details?id=me.shehryar)
 
 ## Installation
 
