@@ -1,0 +1,36 @@
+<!-- Themes Swipe To Dismiss - Products + CTA -->
+<ion-grid no-padding *ngIf="data != null">
+  <ion-row>
+    <ion-col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12>
+      <!-- Header top Swipe To Dismiss Products + CTA -->
+      <ion-list-header header-section>
+        <!-- Big Title Swipe To Dismiss Products + CTA -->
+        <h1 header-title text-capitalize>{{data.header}}</h1>
+      </ion-list-header>
+      <!-- Content -->
+      <ion-list no-margin>
+        <ion-item-sliding *ngFor="let item of data.items" #slidingItem>
+          <ion-item border no-lines (click)="onEvent('onItemClick', item.title, $event)">
+            <!-- Images -->
+            <ion-thumbnail item-start>
+              <img src="{{item.image}}">
+            </ion-thumbnail>
+            <!-- Title -->
+            <h2 item-title>{{item.title}}</h2>
+            <!-- Subtitle -->
+            <p item-subtitle text-wrap>{{item.subtitle}}</p>
+            <!-- Badge -->
+            <ion-badge text-uppercase class="badge-light" item-end>{{item.ionBadge}}</ion-badge>
+          </ion-item>
+          <!--Action Button-->
+          <ion-item-options no-lines>
+            <!-- Button -->
+            <button ion-button text-capitalize (click)="delete(item)">
+              {{item.delate}}
+            </button>
+          </ion-item-options>
+        </ion-item-sliding>
+      </ion-list>
+    </ion-col>
+  </ion-row>
+</ion-grid>

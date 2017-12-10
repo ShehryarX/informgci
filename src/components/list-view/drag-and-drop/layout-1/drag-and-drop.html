@@ -1,0 +1,29 @@
+<!-- Themes Drag and drop - Small item + header -->
+<ion-grid no-padding *ngIf="data != null">
+    <!--Header-->
+    <ion-row>
+        <!--Content-->
+        <ion-col col-12>
+            <ion-list-header no-lines>
+                <h2 card-title class="timetable_header">{{data.header}}</h2>
+            </ion-list-header>
+            <ion-list reorder="true" (ionItemReorder)="reorderItems($event)">
+                <ion-item border no-lines padding-left *ngFor="let item of data.items; let i = index;"
+                (click)="onEvent('onItemClick', item.title, $event)">
+                    <h2 item-title> 
+                        {{item.title}}
+                    </h2>
+                    <h3 item-subtitle>{{item.subtitle}}</h3>
+
+                    <ion-badge item-end item-subtitle *ngIf="item.selected; else nocolour">{{timings[i].time}}</ion-badge>
+
+                    <ng-template #nocolour>
+                        <ion-badge item-end item-subtitle  color="light">{{timings[i].time}}</ion-badge>
+                    </ng-template>
+
+                    <!--<p item-subtitle item-end>{{item.textIcon}}</p>-->
+                </ion-item>
+            </ion-list>
+        </ion-col>
+    </ion-row>
+</ion-grid>

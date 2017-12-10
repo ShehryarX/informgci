@@ -1,0 +1,108 @@
+<!-- Calendar with events, announcements and clubs -->
+
+<ion-grid no-padding *ngIf="data != null">
+    <ion-row>
+      <ion-col col-12 no-padding no-margin>
+        <ion-list>
+          <ul no-margin no-padding class="collapsible">
+            <li margin *ngFor="let group of data.items;">
+              <!-- Expandable Full image with CTA Header-->
+              <div class="collapsible-header" (click)="toggleGroup(group)">
+                <ion-item no-margin padding no-lines background-size
+                [ngStyle]="{'background-image': 'url(' + group.backgroundImage + ')'}">
+                  <!-- Subtitle Card -->
+                  <h3 ion-text color="light" text-wrap text-capitalize item-subtitle>{{group.subtitle}}</h3>
+                  <!-- Title Card -->
+                  <h1 ion-text color="light" text-wrap header-title>Hey there, today is a {{group.title}}</h1>
+                  <!-- Icon And Text For Read More-->
+                  <div read-more>
+                    <ion-icon icon-medium float-left name="{{group.icon}}"></ion-icon>
+                    <span span-medium>{{group.iconText}}</span>
+                  </div>
+                </ion-item>
+              </div>
+  
+              <!-- Expandable -->
+              <div class="item-accordion" [ngClass]="{'active': isGroupShown(group) }" [hidden]="!isGroupShown(group)">
+                <ion-item text-wrap no-lines>
+                  <div (click)="onEvent('onItemClick', group, $event)">
+                    <!-- Events -->
+                    <h1 margin-top>Events </h1>
+  
+                    <!-- If there are no events -->
+                    <span *ngIf="group.eventsList.length == 0; else listEvents">
+                      <!-- Empty events message -->
+                      <h2 margin-top subitem-title>No events.</h2>                   
+                    </span>
+  
+                    <!-- List the events if any -->
+                    <ng-template #listEvents> 
+                      <span *ngFor="let event of group.eventsList">
+                        <!-- Event title -->
+                        <h2 margin-top subitem-title>{{event.title}}</h2>
+                        
+                        <!-- Event description -->
+                        <p subitem-subtitle>{{event.description}}</p>
+                      </span>
+                    </ng-template>
+  
+                    <!-- Leave a space -->
+                    <br>
+  
+                    <!-- Clubs -->
+                    <h1 margin-top>Clubs </h1>
+  
+                    <!-- If there are no events -->
+                    <span *ngIf="group.eventsList.length == 0; else clubsEvents">
+                      <!-- Empty clubs message -->
+                      <h2 margin-top subitem-title>No clubs.</h2>                   
+                    </span>
+  
+                    <!-- List the clubs if any -->
+                    <ng-template #clubsEvents>
+                      <span *ngFor="let club of group.clubsList">
+                        <!-- Name of club -->
+                        <h2 margin-top subitem-title>{{club.title}}</h2>
+  
+                        <!-- Club room -->
+                        <p subitem-subtitle>Room {{club.room}}</p>
+                        
+                        <!-- Description of club -->
+                        <p subitem-subtitle>{{club.description}}</p>
+                      </span>
+                    </ng-template>
+                    
+                    <!-- Leave a space -->
+                    <br>
+                    
+                    <!-- Announcements  -->
+                    <h1 margin-top>Announcements </h1>
+  
+                    <!-- If there are no events -->
+                    <span *ngIf="group.announcementsList.length == 0; else announcementsEvents">
+                      <!-- Empty announcements message -->
+                      <h2 margin-top subitem-title>No announcements.</h2>                   
+                    </span>
+  
+                    <!-- List the events if any -->
+                    <ng-template #announcementsEvents> 
+                      <span *ngFor="let announcement of group.announcementsList">
+                        <!-- Annoucement title -->
+                        <h2 margin-top subitem-title>{{announcement.title}}</h2>
+                        
+                        <!-- Announcement description -->
+                        <p subitem-subtitle>{{announcement.description}}</p>
+                      </span>
+                    </ng-template>
+                    
+                    <!-- Leave a space -->
+                    <br>
+                  </div>
+                </ion-item>
+              </div>
+            </li>
+          </ul>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>

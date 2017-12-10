@@ -1,0 +1,42 @@
+<ion-content>
+  <expandable-layout-2
+    [data]="dayData"
+    [events]="events">
+  </expandable-layout-2>
+
+  <br>
+
+  <google-card-layout-3
+    [data]="quotesData"
+    [events]="events">
+  </google-card-layout-3>
+  <br>
+
+    <ion-grid no-padding *ngIf="data != null">
+    <!--Header-->
+    <ion-row>
+        <!--Content-->
+        <ion-col col-12>
+            <ion-list-header no-lines>
+                <h2 card-title class="timetable_header">{{data.header}}</h2>
+            </ion-list-header>
+            
+            <ion-list reorder="true" (ionItemReorder)="reorderItems($event)">
+                <ion-item border no-lines padding-left *ngFor="let item of data.items; let i = index;" (click)="onEvent('onItemClick', item, $event)">
+                    <h2 item-title>{{item.title}}</h2>
+                    <h3 item-subtitle>{{item.subtitle}}</h3>
+                    <ion-badge item-end item-subtitle *ngIf="item.selected; else nocolour">{{timings[i].time}}</ion-badge>    
+                    <ng-template #nocolour><ion-badge item-end item-subtitle  color="light">{{timings[i].time}}</ion-badge></ng-template>
+                </ion-item>
+            </ion-list>
+        </ion-col>
+    </ion-row>
+
+    <!-- Content break -->
+    <br>
+    
+    <p item-subtitle item-end style="text-align: center" (click)="suggestions()"><u>Have a suggestion?</u></p>  
+    <p item-subtitle item-end style="text-align: center">Created by Shehryar Assad<br>Updated daily by Umair Farhan</p>
+    </ion-grid>
+
+</ion-content>

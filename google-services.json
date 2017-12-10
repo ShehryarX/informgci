@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "420823562722",
+    "firebase_url": "https://mgci-app.firebaseio.com",
+    "project_id": "mgci-app",
+    "storage_bucket": "mgci-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:420823562722:android:c9c51c854c981e95",
+        "android_client_info": {
+          "package_name": "me.shehryar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "420823562722-us5kq8ikvg2c86go1a425rf2q2it32vc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzV_1w_5-Sh8E7nOm-D5MMkJrw0qTE2KI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

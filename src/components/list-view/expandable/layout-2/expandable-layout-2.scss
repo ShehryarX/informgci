@@ -1,0 +1,64 @@
+/*  #Style Expandable - Full image with CTA
+===========================================*/
+expandable-layout-2 {
+  li {
+      list-style-type: none;
+  }
+  // settings Expandable Full image with CTA Header
+  .collapsible-header {
+    [background-size] {
+      height: 215px;
+      position: relative;
+      border-radius: $border-radius;
+      @include darkening-blend-mode;
+
+      [item-subtitle] {
+        padding-top: 40px;
+      }
+    }
+    // Settings Read More
+    [read-more] {
+      position: absolute;
+      left: 7px;
+      bottom: 0;
+    }
+
+    [span-medium] {
+      line-height: 37px;
+    }
+  }
+  // Settings Expandable Full Image With CTA Body
+  .item-accordion {
+    height: 0;
+    display: block !important;
+    -webkit-transition: all 0ms;
+    transition: all 0ms;
+    overflow: hidden;
+
+    [span-small] {
+      margin-top: 5px;
+      display: block;
+      margin-left: 15px;
+    }
+
+    [icon-small]::before {
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+    }
+
+    &.active {
+      height: 100% !important;
+    }
+  }
+
+  .ranking_number {
+    text-align: right;
+    float: right;
+  }
+
+  .ranking_number_stl {
+    float: left;
+    margin-left: 10px;
+    padding-top: 100px;
+  }
+}

@@ -1,0 +1,15 @@
+<!--Theme Google Card - Styled cards-->
+<ion-grid no-padding>
+  <ion-row *ngIf="data != null">
+    <ion-col col-12 *ngFor="let item of data.items;let i = index">
+      <!--Header Styled cards-->
+      <ion-item no-lines>
+        <!-- Card Title -->
+        <h2 card-title>{{item.title}}</h2>
+        <!-- Card Subtitle -->
+        <h3 card-subtitle text-wrap>{{item.quote}} <span new-category text-uppercase class="quote">~{{item.name}}</span></h3>
+      </ion-item> 
+      <!-- End Header Styled Cards-->
+    </ion-col>
+  </ion-row>
+</ion-grid>
