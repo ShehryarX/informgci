@@ -17,13 +17,5 @@ You can run the app using a local web server at [localhost](localhost:8080) afte
 
 ## Screenshots
 
-![Intro](https://raw.githubusercontent.com/ShehryarX/inform-mgci/master/1.png) 
-
-![Events](https://raw.githubusercontent.com/ShehryarX/inform-mgci/master/2.png) 
-
-![Clubs and announcements](https://raw.githubusercontent.com/ShehryarX/inform-mgci/master/3.png)
-
-![Quote and timetable](https://raw.githubusercontent.com/ShehryarX/inform-mgci/master/4.png) 
-
-![Push notifications](https://raw.githubusercontent.com/ShehryarX/inform-mgci/master/5.png-rw)
+![Intro](https://raw.githubusercontent.com/ShehryarX/inform-mgci/master/1.png) ![Events](https://raw.githubusercontent.com/ShehryarX/inform-mgci/master/2.png) ![Clubs and announcements](https://raw.githubusercontent.com/ShehryarX/inform-mgci/master/3.png) ![Quote and timetable](https://raw.githubusercontent.com/ShehryarX/inform-mgci/master/4.png) ![Push notifications](https://raw.githubusercontent.com/ShehryarX/inform-mgci/master/5.png-rw)
 
