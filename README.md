@@ -12,7 +12,7 @@ An awesome companion app for students at Marc Garneau CI to get on the air updat
 
 You can run the app using a local web server at [localhost](localhost:8080) after the following commands:  
 `cd /..project directory../`    
-`ionic serve`   
+`ionic serve --labs`   
 
 
 ## Screenshots
